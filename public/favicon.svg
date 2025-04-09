@@ -1,0 +1,8 @@
+<svg width="197" height="197" viewBox="0 0 32 32" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke="#000" stroke-width="0">
+<path fill-rule="evenodd" clip-rule="evenodd" d="m18.3 27 11-11A9 9 0 0 0 32 9.4a9 9 0 0 0-2.7-6.7A9 9 0 0 0 22.6 0 9 9 0 0 0 16 2.7 9 9 0 0 0 9.4 0a9 9 0 0 0-6.7 2.7A9 9 0 0 0 0 9.4 9 9 0 0 0 2.7 16l11 11a3.2 3.2 0 0 0 4.6 0Z" fill="url(#a)" stroke="none"/>
+<defs>
+<radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(59.9 -4.3 11.8) scale(18.7297 20.4872)">
+<stop stop-color="#00bfff"/><stop offset="1" stop-color="#678ad0"/>
+</radialGradient>
+</defs>
+</sgv>

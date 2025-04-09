@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --blanco: #e7e7e7;
+    --gris_claro: #aeaeae;
+    --gris: #aeaeae;
+
+    --primario: rgb(77, 120, 148);
+    color-scheme: light dark;
+}
+
+html{
+    scroll-behavior: smooth;
+}

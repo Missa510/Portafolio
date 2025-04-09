@@ -1,0 +1,24 @@
+---
+const { title, description } = Astro.props;
+
+import "../globals.css";
+import Header from "$_compon/Header";
+import Footer from "$_compon/Footer";
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>{title}</title>
+    </head>
+    <body class="bg-main-frutiger bg-cover bg-center bg-no-repeat bg-fixed scroll-smooth overflow-y-scroll">
+        <Header />
+        <slot />
+        <Footer/>
+    </body>
+</html>
