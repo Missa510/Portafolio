@@ -1,8 +1,20 @@
-<svg width="197" height="197" viewBox="0 0 32 32" fill="#000" xmlns="http://www.w3.org/2000/svg" stroke="#000" stroke-width="0">
-<path fill-rule="evenodd" clip-rule="evenodd" d="m18.3 27 11-11A9 9 0 0 0 32 9.4a9 9 0 0 0-2.7-6.7A9 9 0 0 0 22.6 0 9 9 0 0 0 16 2.7 9 9 0 0 0 9.4 0a9 9 0 0 0-6.7 2.7A9 9 0 0 0 0 9.4 9 9 0 0 0 2.7 16l11 11a3.2 3.2 0 0 0 4.6 0Z" fill="url(#a)" stroke="none"/>
-<defs>
-<radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(59.9 -4.3 11.8) scale(18.7297 20.4872)">
-<stop stop-color="#00bfff"/><stop offset="1" stop-color="#678ad0"/>
-</radialGradient>
-</defs>
-</sgv>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64" height="64">
+  <path fill="#3e4f59" fill-rule="evenodd" d="M10 9h49v6H10z"/>
+  <path fill="#acbec2" fill-rule="evenodd" d="M10 15h49v40H10z"/>
+  <path fill="#e8edee" fill-rule="evenodd" d="M10 15v40h29.8a28.5 41.4 35.6 0 0 18.6-40z"/>
+  <path fill-rule="evenodd" d="M12 8a3 3 0 0 0-3 3v40a1 1 0 1 0 2 0V11c0-.6.4-1 1-1h45c.6 0 1 .4 1 1v3H16a1 1 0 0 0 0 2h42v37c0 .6-.4 1-1 1H8a1 1 0 0 0 0 2h49a3 3 0 0 0 3-3V11a3 3 0 0 0-3-3z" color="#000"/>
+  <path fill="#ed7161" fill-rule="evenodd" d="M343 299a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill="#ecba16" fill-rule="evenodd" d="M339 299a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill="#42b05c" fill-rule="evenodd" d="M335 299a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill-rule="evenodd" d="M293 342a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zM301 302a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill-rule="evenodd" d="M31 19a1 1 0 0 0-1 1v29a1 1 0 0 0 1 1 1 1 0 0 0 1-1V20a1 1 0 0 0-1-1zM22 38a1 1 0 0 0-1 1 1 1 0 0 0 1 1h5a1 1 0 0 0 1-1 1 1 0 0 0-1-1zM15 38a1 1 0 0 0-1 1 1 1 0 0 0 1 1h3a1 1 0 0 0 1-1 1 1 0 0 0-1-1zM15 44a1 1 0 0 0-1 1 1 1 0 0 0 1 1h12a1 1 0 0 0 1-1 1 1 0 0 0-1-1zM44 21a1 1 0 0 0-1 1 1 1 0 0 0 1 1h9a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" color="#000"/>
+  <path fill-rule="evenodd" d="M324 309a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill-rule="evenodd" d="M44 37a1 1 0 0 0-1 1 1 1 0 0 0 1 1h9a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" color="#000"/>
+  <path fill-rule="evenodd" d="M324 325a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill-rule="evenodd" d="M36 29a1 1 0 0 0-1 1 1 1 0 0 0 1 1h17a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" color="#000"/>
+  <path fill-rule="evenodd" d="M324 334a1 1 0 0 0-1 1 1 1 0 0 0 1 1h17a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" color="#000" style="-inkscape-stroke:none" transform="translate(-288 -288)"/>
+  <path fill="#ffa221" fill-rule="evenodd" d="M24 24a3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3zM16 33c0-3.3 2.2-6 5-6s5 2.7 5 6z"/>
+  <path fill="#ffc343" fill-rule="evenodd" d="M19.8 21.2A3 3 0 0 0 18 24a3 3 0 0 0 3 3 3 3 0 0 0 .7 0 5.8 9.7 0 0 0-1.9-5.8z"/>
+  <path fill="#ffc343" fill-rule="evenodd" d="M21 27c-2.8 0-5 2.7-5 6h5a5.8 9.7 0 0 0 .8-4.5 5.8 9.7 0 0 0-.1-1.4L21 27Z"/>
+  <path fill-rule="evenodd" d="M21 20a4 4 0 0 0-2.8 6.8A7.3 7.3 0 0 0 15 33a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1 1 1 0 0 0-1-1h-2.8c.4-2.3 2-4 3.8-4 1.8 0 3.4 1.7 3.8 4H24a1 1 0 0 0-1 1 1 1 0 0 0 1 1h2a1 1 0 0 0 1-1c0-2.6-1.3-5-3.2-6.2A4 4 0 0 0 21 20zm0 2a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2c0-1.1.9-2 2-2z" color="#000"/>
+</svg>

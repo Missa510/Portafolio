@@ -3,14 +3,14 @@ import { links_contacto } from "$_libs/constantes"
 export default function Heore() {
 
     return (
-        <article className="min-h-[100dvh] py-[10dvh] md:py-[25dvh] w-full flex items-center justify-center flex-col gap-6 md:gap-10">
+        <article className="min-h-[100dvh] py-[10dvh] md:py-[25dvh] w-full flex items-center justify-center flex-col gap-6 md:gap-10 animate-fade-in">
 
             <section className="px-10 flex 2xl:justify-center items-center flex-col md:flex-row gap-4 md:gap-8">
                 {/* icon */}
                 <div className="bg-icon-cipher h-40 md:h-60 xl:h-60 bg-cover bg-center bg-no-repeat aspect-square rounded-full"></div>
 
                 {/* Texto de presentacion */}
-                <article className="flex flex-col px-4 md:px-0 items-center md:items-start gap-5 md:gap-7">
+                <article className="flex flex-col px-4 md:px-0 items-center md:items-start gap-3 md:gap-7">
                     <h1 className="text-4xl text-[#181818] text-center xs:text-left md:text-[3.3rem] lg:text-7xl 2xl:text-[6.2rem]">
                         <span className="text-primary">S</span>antiago <span className="text-primary">Q</span>uintero
                     </h1>
@@ -22,7 +22,10 @@ export default function Heore() {
             <section className="flex flex-col-reverse 3xl:flex-col gap-6 md:gap-10 items-center">
                 {/* Acerca de mi */}
                 <p className="font-sans text-xl text-balance max-w-[30ch] xs:max-w-[40ch] md:max-w-[58ch] md:text-2xl md-pero-no-tanto:max-w-[65ch] 2xl:text-3xl 2xl:max-w-[59ch] p-8 bg-slate-800 text-[#e3e3e3] rounded-2xl shadow-xl" style={{ lineHeight: "145% !important" }}>
-                    " Soy una persona muy buena en el ámbito del desarrollo web como full stack developer; además del ámbito de la escucha y la compresión del contexto. Pacífico y amable, excelente trabajando en equipo e individualmente. Buenas habilidades de improvisación y de encarar los problemas de varios puntos de vista usando las tecnologías soportadas actualemente " <span className="text-slate-400">~ Yo</span>
+                    "Bueno en el ámbito del desarrollo web como full-stack developer; además del ámbito de la
+                    escucha y la comprensión del contexto. Pacífico y amable, excelente trabajando en equipo e
+                    individualmente. Buenas habilidades de improvisación y de encarar los problemas de varios
+                    puntos de vista usando las tecnologías soportadas actualmente." <span className="text-slate-400">~ Yo</span>
                 </p>
                 {/* Links de mis redes "profesionales"  */}
                 <div className="flex flex-col w-full items-stretch sm:flex-row justify-center gap-3 md:gap-6">
