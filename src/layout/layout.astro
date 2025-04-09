@@ -16,9 +16,11 @@ import Footer from "$_compon/Footer";
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{title}</title>
     </head>
-    <body class="bg-main-frutiger bg-cover bg-center bg-no-repeat bg-fixed overflow-y-scroll">
-        <Header />
+    <body
+        class="bg-main-frutiger bg-cover bg-center bg-no-repeat bg-fixed overflow-y-scroll"
+    >
+        <Header client:load />
         <slot />
-        <Footer/>
+        <Footer />
     </body>
 </html>

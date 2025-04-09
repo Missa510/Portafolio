@@ -12,7 +12,7 @@ export default function Heore() {
                 {/* Texto de presentacion */}
                 <article className="flex flex-col px-4 md:px-0 items-center md:items-start gap-3 md:gap-7">
                     <h1 className="text-4xl text-[#181818] text-center xs:text-left md:text-[3.3rem] lg:text-7xl 2xl:text-[6.2rem]">
-                        <span className="text-primary">S</span>antiago <span className="text-primary">Q</span>uintero
+                        <span className="text-primary">S</span>antiago <span className="text-primary">Q</span>uintero <span className="text-primary">V.</span>
                     </h1>
                     <span className="text-stone-200 text-center text-balance italic text-lg md:text-2xl 2xl:text-3xl">Mejor conocido como Missa510 o Missa510UwU</span>
                     <h2 className="font-bold text-[#7e838e] text-balance text-center md:text-left text-3xl md:text-4xl 2xl:text-5xl uppercase">&lt;Full Stack Developer /&gt; </h2>

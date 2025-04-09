@@ -95,3 +95,28 @@ export const IGIcon = ({ clases }: SVGProps) => (
         <path d="M257.6 363A115.8 115.8 0 0 1 141 247.6c-.1-63 52.3-114.6 116.4-114.6A115.8 115.8 0 0 1 374 247.9 116 116 0 0 1 257.6 363zm0-37a78.8 78.8 0 0 0 79.4-78.3 78.9 78.9 0 0 0-79.4-77.8 79 79 0 0 0-79.7 78 79 79 0 0 0 79.7 78.1zM387.5 98a25.1 25.1 0 0 1 24.5 25.6 25.1 25.1 0 0 1-24.7 25.4 25 25 0 0 1-24.2-25.3A25 25 0 0 1 387.5 98z" />
     </svg>
 )
+
+export const MenuOpenIcon = ({ clases }: SVGProps) => (
+    <svg
+        className={clases}
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 680 680"
+        width="612" height="612"
+    >
+        <path d="M61.2 122.4h489.6a61.2 61.2 0 0 0 0-122.4H61.2a61.2 61.2 0 1 0 0 122.4zm489.6 122.4H61.2a61.2 61.2 0 1 0 0 122.4h489.6a61.2 61.2 0 0 0 0-122.4zm0 244.8H61.2a61.2 61.2 0 1 0 0 122.4h489.6a61.2 61.2 0 0 0 0-122.4z" />
+    </svg>
+)
+
+export const MenuCloseIcon = ({ clases }: SVGProps) => (
+    <svg
+        className={clases}
+        fill="currentColor"
+        viewBox="0 0 17 17"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g fillRule="evenodd" stroke="currentColor" strokeLinecap="round" strokeWidth="2">
+            <path d="m1 1 14.1 14.1M15 1 1 15" />
+        </g>
+    </svg>
+)
