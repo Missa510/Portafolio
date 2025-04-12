@@ -1,5 +1,3 @@
-"use client"
-
 import { CodeIcon, DemoIcon } from "$_compon/ui/icons_svgs";
 import type ProyectoProps from "$_types/tipos";
 import Brant from "$_compon/ui/brant";
@@ -8,13 +6,13 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, image, technolo
 
     return (
 
-        <section className="flex aspcet-auto overflow-hidden h-full w-auto bg-no-repeat bg-cover bg-center rounded-lg shadow-md" style={{
+        <section className="flex md:aspect-video overflow-hidden h-max w-full md:h-auto md:w-full md:flex-shrink-0 bg-no-repeat bg-cover bg-center rounded-lg shadow-md" style={{
             backgroundImage: `url(${image})`
         }}>
             {/* Haz tap o pasa el ratón para ver el proyecto */}
             <div className={`
                 w-full h-full flex overflow-x-hidden overflow-y-auto rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/20 gap-4 md:gap-12 p-4 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
-            `.trim()}>
+            `.trim()} >
 
                 <h1 className="text-center font-[600] text-4xl md:text-6xl">{title}</h1>
 
@@ -50,7 +48,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, image, technolo
                             <span>Hice este proyecto con ayuda de: </span>
                             <div>
                                 {partners.map((partner, index) => (
-                                    <a key={index} className="underline" href={partner.link} target="_blank" rel="noopener noreferrer">{partner.name}</a>
+                                    <a key={index} className="hover:underline hover:text-cyan-300" href={partner.link} target="_blank" rel="noopener noreferrer">{partner.name}</a>
                                 ))}
                             </div>
                         </div>

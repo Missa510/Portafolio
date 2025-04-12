@@ -4,11 +4,12 @@ import Proyectos from "$_compon/Proyectos";
 import Layout from "$_lay/layout.astro";
 ---
 
-<Layout title="Portafolio de Missa510" description="Este es el portafolio de Missa510">
-	<main>
-		<Heore />
-		<div class="container mx-auto">
-			<Proyectos/>
-		</div>
-	</main>
+<Layout
+	title="Portafolio de Missa510"
+	description="Este es el portafolio de Missa510"
+>
+	<Heore />
+	<div class="container mx-auto">
+		<Proyectos client:load />
+	</div>
 </Layout>

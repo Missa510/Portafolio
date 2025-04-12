@@ -16,7 +16,7 @@ export default function Header() {
                     {
                         links_header.map((item, index) => {
                             return (
-                                <a key={index} href={item.href} className="text-xl text-[#efefef] underline underline-offset-2 hover:no-underline hover:italic focus:no-underline focus:italic active:no-underline active:italic">
+                                <a key={index} href={item.href} className="text-xl text-[#efefef] underline underline-offset-2 hover:no-underline focus:no-underline focus:italic active:no-underline">
                                     {item.name}
                                 </a>
                             )

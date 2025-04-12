@@ -120,3 +120,25 @@ export const MenuCloseIcon = ({ clases }: SVGProps) => (
         </g>
     </svg>
 )
+
+export const LeftArrow = ({ clases }: SVGProps) => (
+    <svg
+        className={clases}
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+    >
+        <path d="M353 450a15 15 0 0 1-10.6-4.4L157.5 260.7a15 15 0 0 1 0-21.2L342.4 54.6a15 15 0 1 1 21.2 21.2L189.3 250.1l174.3 174.3A15 15 0 0 1 353 450Z" data-name="1" />
+    </svg>
+)
+
+export const RightArrow = ({ clases }: SVGProps) => (
+    <svg
+        className={clases}
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+    >
+        <path d="M202.1 450a15 15 0 0 1-10.6-25.6L365.8 250 191.5 75.8a15 15 0 0 1 21.2-21.2l185 184.9a15 15 0 0 1 0 21.2l-185 185a15 15 0 0 1-10.6 4.3Z" data-name="1" />
+    </svg>
+)
