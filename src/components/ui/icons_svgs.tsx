@@ -72,7 +72,7 @@ export const WhatsAppIcon = ({ clases }: SVGProps) => (
 export const MailIcon = ({ clases }: SVGProps) => (
     <svg
         className={clases}
-        viewBox="0 0 90 90"
+        viewBox="0 0 95 95"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
     >
@@ -140,5 +140,17 @@ export const RightArrow = ({ clases }: SVGProps) => (
         viewBox="0 0 512 512"
     >
         <path d="M202.1 450a15 15 0 0 1-10.6-25.6L365.8 250 191.5 75.8a15 15 0 0 1 21.2-21.2l185 184.9a15 15 0 0 1 0 21.2l-185 185a15 15 0 0 1-10.6 4.3Z" data-name="1" />
+    </svg>
+)
+
+export const PDFIcon = ({ clases }: SVGProps) => (
+    <svg
+        className={clases}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+        <path fill="currentColor" d="M8 16.4h.6c.2 0 .3 0 .4-.2l.1-.5L9 15a.5.5 0 0 0-.4-.3h-.7v1.6ZM11.7 14.8v3.4h.2c.4 0 .6-.1.7-.3l.2-1v-.8c0-.5 0-.8-.2-1-.1-.2-.3-.2-.6-.3h-.3Z" />
+        <path fill="currentColor" fill-rule="evenodd" d="m20 8.7-.1-.1a1 1 0 0 0-.2-.3l-6-6a1 1 0 0 0-.6-.3H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8.7ZM13 4v5h5l-5-5ZM8 17.2V19H7v-5h1.6c.4 0 .8.2 1 .5.4.3.5.7.5 1.2 0 .4-.1.8-.4 1.1-.3.3-.7.4-1.1.4h-.7Zm2.7 1.8v-5H12c.5 0 1 .2 1.3.6.3.3.4.8.4 1.5v.8c0 .6-.1 1.2-.4 1.5-.4.4-.8.6-1.4.6h-1.2Zm4.7-2h1.4V16h-1.4v-1.3H17V14h-2.6v5h1v-2Z" clip-rule="evenodd" />
     </svg>
 )

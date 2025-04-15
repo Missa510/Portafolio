@@ -1,9 +1,8 @@
-"use client"
-
 import Proyecto from "$_compon/Proyecto";
 import { Proyectos_const } from "$_libs/constantes"
 import { LeftArrow, RightArrow } from "$_compon/ui/icons_svgs"
 import { useState, useEffect, useRef } from "react"
+import { Card } from "$_compon/ui/card";
 
 export default function Proyectos() {
 
@@ -28,7 +27,7 @@ export default function Proyectos() {
 
     return (
 
-        <article id="proyectos" className="px-4 py-3 grid gap-5 item-center bg-slate-700 p-4 rounded-md shadow-lg">
+        <Card id="proyectos">
             <section className="my-1">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Proyectos</h1>
                 <h3 className="text-center mt-2 text-md md:text-2xl italic text-stone-400">Haz hover en la imagen o click para ver la información del proyecto</h3>
@@ -57,6 +56,6 @@ export default function Proyectos() {
                     <RightArrow clases="h-8 w-8"/>
                 </button>
             </section>
-        </article>
+        </Card>
     )
 }

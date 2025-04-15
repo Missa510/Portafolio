@@ -1,4 +1,4 @@
-export default interface ProyectoProps {
+export interface ProyectoProps {
     id: string,
     title: string,
     description: string,
@@ -12,6 +12,15 @@ export default interface ProyectoProps {
             link: string
         }
     ]
+}
+
+export interface CertificadoProps {
+    id: string,
+    name: string,
+    description: string,
+    path: string,
+    expeDate: Date,
+    expeInstituteS: string[]
 }
 
 export interface SVGProps {

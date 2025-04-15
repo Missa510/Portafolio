@@ -1,5 +1,5 @@
 import { CodeIcon, DemoIcon } from "$_compon/ui/icons_svgs";
-import type ProyectoProps from "$_types/tipos";
+import type { ProyectoProps } from "$_types/tipos";
 import Brant from "$_compon/ui/brant";
 
 const Proyecto: React.FC<ProyectoProps> = ({ title, description, image, technologies, git, demo, partners }) => {

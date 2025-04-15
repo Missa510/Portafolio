@@ -1,0 +1,20 @@
+---
+import { Certificaciones } from "$_libs/constantes";
+import { Card } from "$_compon/ui/card";
+import Certificacion from "$_compon/Certificacion.astro";
+---
+
+<Card id="certificados">
+    <section class="my-1">
+        <h1
+            class="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white"
+        >
+            Certificados
+        </h1>
+    </section>
+    {
+        Certificaciones.map((crtf) => {
+            return <Certificacion key={crtf.id} {...crtf} client:visible />;
+        })
+    }
+</Card>
