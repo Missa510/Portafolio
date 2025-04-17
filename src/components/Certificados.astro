@@ -14,7 +14,7 @@ import Certificacion from "$_compon/Certificacion.astro";
     </section>
     {
         Certificaciones.map((crtf) => {
-            return <Certificacion key={crtf.id} {...crtf} client:visible />;
+            return <Certificacion key={crtf.id} {...crtf} />;
         })
     }
 </Card>

@@ -11,7 +11,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, image, technolo
         }}>
             {/* Haz tap o pasa el ratón para ver el proyecto */}
             <div className={`
-                w-full h-full flex overflow-x-hidden overflow-y-auto rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/20 gap-4 md:gap-12 p-4 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
+                w-full h-full flex overflow-x-hidden overflow-y-auto rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/40 gap-4 md:gap-12 p-6 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
             `.trim()} >
 
                 <h1 className="text-center font-[600] text-4xl md:text-6xl">{title}</h1>
