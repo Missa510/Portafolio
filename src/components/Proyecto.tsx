@@ -6,7 +6,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, image, technolo
 
     return (
 
-        <section className="flex md:aspect-video overflow-hidden h-max w-full md:h-auto md:w-full md:flex-shrink-0 bg-no-repeat bg-cover bg-center rounded-lg shadow-md" style={{
+        <section className="flex md:aspect-video overflow-hidden h-max w-full md:h-auto md:w-full md:flex-shrink-0 bg-no-repeat bg-cover bg-center rounded-lg shadow-md contain-content" style={{
             backgroundImage: `url(${image})`
         }}>
             {/* Haz tap o pasa el ratón para ver el proyecto */}

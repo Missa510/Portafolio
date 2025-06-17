@@ -18,7 +18,7 @@ export const Proyectos_const: ProyectoProps[] = [
         description: `
             Página oficial de los niños cantores del Táchira más moderna, con un mejor rendimiento y que cubre todas las necesidades de los estudiantes y profesores. Además del uso de técnicas sencillas de ciberseguridad para la protección del material oficial
         `,
-        technologies: ["NextJS", "React", "Tailwind", "HeroUI"],
+        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI"],
         image: "images/projects/carajitos.png",
         git: "https://github.com/daws-4/ninoscantoreslanding",
         demo: "https://ninoscantorestachira.vercel.app/",
