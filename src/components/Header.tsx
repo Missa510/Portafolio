@@ -6,7 +6,7 @@ import { MenuCloseIcon, MenuOpenIcon } from "$_compon/ui/icons_svgs"
 
 export default function Header() {
 
-    const [opened, setOpened] = useState<boolean>(false)
+    const [opened, setOpened] = useState(false)
 
     return (
         <>
@@ -27,7 +27,7 @@ export default function Header() {
             <header className="grid md-pero-no-tanto:hidden items-center backdrop-blur-[8px] fixed top-0 z-50 w-full border-b-2 px-3 py-2">
                 <nav className="inline-flex items-center justify-between gap-5">
                     <a href="/" className="text-5xl text-white">Inicio</a>
-                    <button onClick={() => {
+                    <button aria-label="menu_context" onClick={() => {
                         setOpened((prev) => !prev)
                         const menu = document.getElementById("menu")
                         const menuCover = document.getElementById("menu-cover")

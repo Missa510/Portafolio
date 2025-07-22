@@ -5,6 +5,7 @@ export const Proyectos_const: ProyectoProps[] = [
     {
         id: "cubo-que-gira",
         title: "Cubo que gira",
+        date: new Date("2024-10-07"),
         description: `
             Este es un cubo que gira gracias a la tecnología de WebGL del navegador y el motor gráfico para videojuegos y/o modelado Three JS. También repoduce música de forma automática.
         `,
@@ -15,13 +16,14 @@ export const Proyectos_const: ProyectoProps[] = [
     }, {
         id: "carajitos-cantores",
         title: "Niños cantores del Táchira",
+        date: new Date("2025-02-25"),
         description: `
-            Página oficial de los niños cantores del Táchira más moderna, con un mejor rendimiento y que cubre todas las necesidades de los estudiantes y profesores. Además del uso de técnicas sencillas de ciberseguridad para la protección del material oficial
+            Página oficial de los niños cantores del Táchira más moderna, con un mejor rendimiento y que cubre todas las necesidades de los estudiantes y profesores. Además del uso de técnicas sencillas de ciberseguridad para la protección del material oficial.
         `,
         technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI"],
         image: "images/projects/carajitos.png",
         git: "https://github.com/daws-4/ninoscantoreslanding",
-        demo: "https://ninoscantorestachira.vercel.app/",
+        // demo: "https://ninoscantorestachira.vercel.app/",
         partners:
             [
                 {
@@ -69,7 +71,6 @@ export const links_contacto = [
         icon: LinkedinLogo
     }, {
         name: "CV",
-        link: "/docs/CV.pdf",
         icon: CVLogo
     }, {
         name: "WhatsApp",
@@ -91,10 +92,16 @@ export const links_contacto = [
 
 export const links_header = [
     {
+        name: 'Sobre mí',
+        href: '#sobreMi',
+    },{
         name: 'Proyectos',
         href: '#proyectos',
     },{
         name: 'Certificados',
         href: '#certificados',
+    },{
+        name: 'Contacto',
+        href: '#contact',
     },
 ]

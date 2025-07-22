@@ -2,6 +2,7 @@ export interface ProyectoProps {
     id: string,
     title: string,
     description: string,
+    date: Date,
     technologies: string[],
     image: string,
     git?: string,
@@ -23,6 +24,6 @@ export interface CertificadoProps {
     expeInstituteS: string[]
 }
 
-export interface SVGProps {
+export interface SVGProps extends SVGProps {
     clases: string
 }

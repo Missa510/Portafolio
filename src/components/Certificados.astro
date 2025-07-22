@@ -4,7 +4,7 @@ import { Card } from "$_compon/ui/card";
 import Certificacion from "$_compon/Certificacion.astro";
 ---
 
-<Card id="certificados">
+<Card id="certificados" class:list="w-full">
     <section class="my-1">
         <h1
             class="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white"
@@ -12,9 +12,11 @@ import Certificacion from "$_compon/Certificacion.astro";
             Certificados
         </h1>
     </section>
-    {
-        Certificaciones.map((crtf) => {
-            return <Certificacion key={crtf.id} {...crtf} />;
-        })
-    }
+    <section class="grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));">
+        {
+            Certificaciones.map((crtf) => {
+                return <Certificacion key={crtf.id} {...crtf} />;
+            })
+        }
+    </section>
 </Card>

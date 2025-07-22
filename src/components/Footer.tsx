@@ -3,7 +3,7 @@ import { links_header } from "$_libs/constantes"
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-slate-800 mt-6 px-6 py-3">
+        <footer className="w-full bg-slate-800 mt-6 px-6 py-3" id="contact">
             <section className="grid place-items-center md:grid-cols-2 gap-y-3 md:gap-x-6">
                 <section className="grid gap-3">
                     <h1 className="uppercase text-center md:text-left font-bold text-lg md:text-2xl text-slate-200">Contactos personales</h1>
