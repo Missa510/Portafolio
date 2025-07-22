@@ -3,14 +3,6 @@ import { useState, useEffect } from "react"
 
 export default function Heore() {
 
-    const [esHispano, setEsHispano] = useState(false)
-
-    useEffect(() => {
-        const idioma = navigator.language;
-        console.log("Idioma del navegador:", idioma);
-        idioma.startsWith("es") && setEsHispano(true);
-    }, [esHispano]);
-
     return (
         <article className="min-h-[100dvh] py-[10dvh] md:py-[25dvh] w-full flex items-center justify-center flex-col gap-6 md:gap-10 animate-fade-in">
 
@@ -43,7 +35,7 @@ export default function Heore() {
                         links_contacto.slice(0, 3).map((enlace, index) => {
                             const { name, link, icon } = enlace
                             return (
-                                <a key={index} href={link && esHispano ? "/docs/cv/CV_es.pdf" : "/docs/cv/CV_en.pdf"} target="_blank" rel="noreferrer noopener nofollow external" className="flex items-center gap-2 bg-primary text-lg text-white px-3 py-2 rounded-md 2xl:px-6 2xl:py-4 2xl:text-[2rem] 2xl:gap-4 hover:hue-rotate-30 focus:hue-rotate-30 hover:scale-110 focus:scale-110 active:hue-rotate-30 transition-all duration-200 ease-in-out">
+                                <a key={index} href={link} target="_blank" rel="noreferrer noopener nofollow external" className="flex items-center gap-2 bg-primary text-lg text-white px-3 py-2 rounded-md 2xl:px-6 2xl:py-4 2xl:text-[2rem] 2xl:gap-4 hover:hue-rotate-30 focus:hue-rotate-30 hover:scale-110 focus:scale-110 active:hue-rotate-30 transition-all duration-200 ease-in-out">
                                     {icon({ clases: "text-white w-auto h-10 2xl:h-14" })}
                                     {name}
                                 </a>

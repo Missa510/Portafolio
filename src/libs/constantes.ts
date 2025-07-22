@@ -71,6 +71,7 @@ export const links_contacto = [
         icon: LinkedinLogo
     }, {
         name: "CV",
+        link: "/docs/cv/CV_en.pdf",
         icon: CVLogo
     }, {
         name: "WhatsApp",
