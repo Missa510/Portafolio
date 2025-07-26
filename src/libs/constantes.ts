@@ -23,7 +23,7 @@ export const Proyectos_const: ProyectoProps[] = [
         technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI"],
         image: "images/projects/carajitos.png",
         git: "https://github.com/daws-4/ninoscantoreslanding",
-        // demo: "https://ninoscantorestachira.vercel.app/",
+        demo: "https://ninoscantorestachira.vercel.app/",
         partners:
             [
                 {

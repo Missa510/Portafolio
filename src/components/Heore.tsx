@@ -1,5 +1,5 @@
 import { links_contacto } from "$_libs/constantes"
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 
 export default function Heore() {
 
@@ -12,7 +12,7 @@ export default function Heore() {
 
                 {/* Texto de presentacion */}
                 <article className="flex flex-col px-4 md:px-0 items-center md:items-start gap-3 md:gap-7">
-                    <h1 className="text-4xl text-stone-100 text-center xs:text-left md:text-[3.1rem] lg:text-7xl 2xl:text-[6.2rem]">
+                    <h1 className="text-4xl text-stone-100 text-center sm:text-left md:text-[3.1rem] lg:text-7xl 2xl:text-[6.2rem]">
                         <span className="text-primary">S</span>antiago <span className="text-primary">Q</span>uintero <span className="text-primary">V.</span>
                     </h1>
                     <span className="text-gray-400 text-center text-balance italic text-lg md:text-2xl 2xl:text-3xl">Mejor conocido como Missa510 o Missa510UwU</span>
@@ -22,9 +22,9 @@ export default function Heore() {
 
             <section className="flex flex-col-reverse 3xl:flex-col gap-6 md:gap-10 items-center" id="sobreMi">
                 {/* Acerca de mi */}
-                <div className="grid gap-3 max-w-[30ch] xs:max-w-[40ch] md:max-w-[58ch] md:text-2xl md-pero-no-tanto:max-w-[65ch] p-8 bg-slate-800 text-[#e3e3e3] rounded-2xl shadow-2xl" style={{ lineHeight: "145%" }}>
+                <div className="grid gap-3 p-8 bg-slate-800 text-[#e3e3e3] rounded-2xl shadow-2xl" style={{ lineHeight: "145%" }}>
                     <h2 className="lg:text-4xl text-3xl uppercase text-white">Sobre mí</h2>
-                    <p className="font-sans text-balance text-xl 2xl:text-3xl 2xl:max-w-[60ch]">
+                    <p className="font-sans text-balance text-xl md:text-2xl 2xl:text-3xl max-w-[75dvw] md:max-w-[58ch] md-pero-no-tanto:max-w-[60ch]">
                         Jóven apacionado por el mundo del desarrollo web, la programcaión en general y el autocrecmiento personal y académico. <code className="text-blue-400 font-bold">Técnico en Desarrollo de Software con más de 3 años de experiencia especializado en desarrollo web Full-Stack</code>, empleando tecnologías de frontend <span className="font-bold">(React, Astro, JavaScript, etc.)</span> y backend <span className="font-bold">(Node.js, PHP, TypeScript, etc.)</span>. <code className="text-blue-400 font-bold">Experiencia comprobada</code> en aplicaciones web escalables con técnicas de ciberseguridad implementadas. <code className="text-blue-400 font-bold">Certificado por Microsoft</code> en desarrollo empresarial programación orientada a objetos. Busco contribuir al desarrollo de soluciones tecnológicas innovadoras del futuro en un equipo dinámico y eficaz.
                     </p>
                 </div>
