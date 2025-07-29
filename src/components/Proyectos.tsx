@@ -30,11 +30,11 @@ export default function Proyectos() {
         <Card id="proyectos">
             <section className="my-1">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Proyectos</h1>
-                <h3 className="text-center mt-2 text-md md:text-2xl italic text-stone-400">Haz hover en la imagen o click para ver la información del proyecto</h3>
+                <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Haz hover en la imagen o click para ver la información del proyecto</h3>
             </section>
 
             <section className="overflow-hidden relative">
-                <section ref={carruselRef} className="relative h-max gap-3 md:gap-0 grid md:inline-flex md:transition-transform md:duration-[650ms] md:esae-in-out">
+                <section ref={carruselRef} className="relative h-max gap-3 lg:gap-0 grid lg:inline-flex md:transition-transform md:duration-[650ms] md:esae-in-out">
                     {
                         Proyectos_const.map(proyecto => {
                             return <Proyecto key={proyecto.id} {...proyecto} />
@@ -44,14 +44,14 @@ export default function Proyectos() {
 
                 <button
                     onClick={handlePrev}
-                    className="hidden md:block absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
+                    className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
                 >
                     <LeftArrow clases="h-8 w-8"/>
                 </button>
 
                 <button
                     onClick={handleNext}
-                    className="hidden md:block absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
+                    className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
                 >
                     <RightArrow clases="h-8 w-8"/>
                 </button>

@@ -14,13 +14,24 @@ export const Proyectos_const: ProyectoProps[] = [
         git: "https://github.com/Missa510/cubo-que-gira",
         demo: "https://cubo-que-gira.vercel.app/"
     }, {
+        id: "garochoa",
+        title: "Inversiones Garochoa",
+        date: new Date("2022-02-28"),
+        description: `
+            Sistema completo de gestión de clientes, administración, inventarios, sedes y proveedores para la ferretería GarOchoa, con el fin de llevar una gestión más eficiente y segura de los datos. Por motivos de seguridad, no hay viste previas en el código.
+        `,
+        technologies: ["HTML", "CSS", "jQuery", "PHP", "MySQL", "Office365"],
+        image: "images/projects/garochoa.jpg",
+        git: "https://github.com/Missa510/Proyecto-Final-II/",
+        // demo: "https://cubo-que-gira.vercel.app/"
+    }, {
         id: "carajitos-cantores",
         title: "Niños cantores del Táchira",
         date: new Date("2025-02-25"),
         description: `
             Página oficial de los niños cantores del Táchira más moderna, con un mejor rendimiento y que cubre todas las necesidades de los estudiantes y profesores. Además del uso de técnicas sencillas de ciberseguridad para la protección del material oficial.
         `,
-        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI"],
+        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB"],
         image: "images/projects/carajitos.png",
         git: "https://github.com/daws-4/ninoscantoreslanding",
         demo: "https://ninoscantorestachira.vercel.app/",
@@ -71,7 +82,7 @@ export const links_contacto = [
         icon: LinkedinLogo
     }, {
         name: "CV",
-        link: "/docs/cv/CV_en.pdf",
+        // link: "/docs/cv/CV_en.pdf",
         icon: CVLogo
     }, {
         name: "WhatsApp",

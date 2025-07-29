@@ -6,21 +6,21 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, date, image, te
 
     return (
 
-        <section className="flex md:aspect-video overflow-hidden h-max w-full md:h-auto md:w-full md:flex-shrink-0 bg-no-repeat bg-cover bg-center rounded-lg shadow-md contain-content" style={{
+        <section className="flex lg:aspect-video overflow-hidden h-max w-full md:h-auto md:w-full md:flex-shrink-0 bg-no-repeat bg-cover bg-center rounded-lg shadow-md contain-content" style={{
             backgroundImage: `url(${image})`
         }}>
             {/* Haz tap o pasa el ratón para ver el proyecto */}
             <div className={`
-                w-full h-full flex overflow-x-hidden overflow-y-auto rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/40 gap-4 md:gap-12 p-6 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
+                w-full h-full flex overflow-x-hidden overflow-y-auto max-h-full rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/40 gap-4 md:gap-12 p-6 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
             `.trim()} >
                 <div className="grid place-items-center gap-3">
                     <h1 className="text-center font-[600] text-4xl md:text-6xl">
                         {title}
                     </h1>
-                    <span className="text-lg md:text-2xl 2xl:text-3xl text-center text-stone-400">Fecha de creación: {date.toDateString()}</span>
+                    <span className="text-lg md:text-2xl 2xl:text-3xl text-center text-cyan-400">Fecha de creación: {date.toDateString()}</span>
                 </div>
                 <div className="grid gap-2 md:gap-6">
-                    <p className="text-balance textbg-stone-300 text-center text-lg md:text-2xl 2xl:text-3xl 2xl:text-center">{description}</p>
+                    <p className="text-balance text-stone-300 text-center text-lg md:text-2xl 2xl:text-3xl 2xl:text-center">{description}</p>
                     <div className="grid gap-3">
                         <h2 className="text-center font-[600] text-2xl md:text-3xl 2xl:text-4xl">Tecnologías</h2>
                         <div className="flex justify-center flex-wrap gap-4">
