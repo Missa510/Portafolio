@@ -1,0 +1,17 @@
+---
+import Certificados from "$_compon/en/Certificados.astro";
+import Heore from "$_compon/en/Heore";
+import Proyectos from "$_compon/en/Proyectos";
+import Layout from "$_lay/layoutEn.astro";
+---
+
+<Layout
+	title="Missa510 ~ Developer"
+	description="This is the Missa510's portfolio"
+>
+	<Heore client:load/>
+	<article class="container px-3 lg:p-0 mx-auto grid place-items-center gap-6">
+		<Proyectos client:load />
+		<Certificados />
+	</article>
+</Layout>
