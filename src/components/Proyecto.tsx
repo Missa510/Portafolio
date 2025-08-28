@@ -11,7 +11,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, description, date, image, te
         }}>
             {/* Haz tap o pasa el ratón para ver el proyecto */}
             <div className={`
-                max-w-full flex overflow-x-hidden overflow-y-auto max-h-full rounded-lg flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/40 gap-4 md:gap-12 p-6 lg:p-0 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
+                w-full max-w-full max-h-full h-full flex overflow-x-hidden overflow-y-auto flex-col items-center justify-center delay-75 transition-all ease-in-out opacity-0 bg-black/40 gap-4 md:gap-12 p-6 lg:p-0 active:opacity-100 active:backdrop-blur-sm hover:opacity-100 hover:backdrop-blur-sm cursor-pointer
             `.trim()} >
                 <div className="grid place-items-center gap-3">
                     <h1 className="text-center font-[600] text-4xl md:text-6xl">
