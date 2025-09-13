@@ -17,7 +17,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, 
                     <h1 className="text-center font-[600] text-4xl md:text-6xl">
                         {title}
                     </h1>
-                    <span className="text-lg md:text-2xl 2xl:text-3xl text-center text-cyan-400">Fecha de creación: {date.toDateString()}</span>
+                    <span className="text-lg md:text-2xl 2xl:text-3xl text-center text-cyan-400">Created at: {date.toDateString()}</span>
                 </div>
                 <div className="grid gap-2 md:gap-6">
                     <p className="text-balance max-w-[80ch] text-stone-300 text-center text-lg md:text-2xl 2xl:text-3xl 2xl:text-center">{descriptionEn}</p>

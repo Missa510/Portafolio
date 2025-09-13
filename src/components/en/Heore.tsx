@@ -19,7 +19,7 @@ export default function Heore() {
                 </article>
             </section>
 
-            <section className="flex flex-col-reverse 3xl:flex-col gap-6 md:gap-10 items-center" id="sobreMi">
+            <section className="flex flex-col-reverse 3xl:flex-col gap-6 md:gap-10 items-center" id="aboutMe">
                 {/* Acerca de mi */}
                 <div className="grid gap-3 p-8 bg-slate-800 text-[#e3e3e3] rounded-2xl shadow-2xl" style={{ lineHeight: "145%" }}>
                     <h2 className="lg:text-4xl text-3xl uppercase text-white">About me</h2>

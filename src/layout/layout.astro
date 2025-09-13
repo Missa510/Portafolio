@@ -1,9 +1,9 @@
 ---
 const { title, description } = Astro.props;
-
 import "../globals.css";
 import Header from "$_compon/Header";
 import Footer from "$_compon/Footer";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -14,6 +14,7 @@ import Footer from "$_compon/Footer";
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <ClientRouter />
         <title>{title}</title>
     </head>
     <body

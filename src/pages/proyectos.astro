@@ -1,0 +1,25 @@
+---
+import Layout from "$_lay/layout.astro";
+import SearchBar from "$_compon/ui/searchBar";
+import ProyectosPage from "$_compon/ProyectosPage";
+import { ProjectsProvider } from "$_app/context/Projects";
+import { slide } from "astro:transitions";
+---
+
+<Layout
+    title="Missa510 ~ Proyectos"
+    description="Estos son los proyectos de Missa510"
+>
+    <main class="container mx-auto mt-24">
+        <ProjectsProvider debounceDefault={"800"}>
+            <SearchBar />
+            <ProyectosPage
+                client:load
+                transition:name="proyectos"
+                transition:animate={slide({
+                    duration: "700ms",
+                })}
+            />
+        </ProjectsProvider>
+    </main>
+</Layout>

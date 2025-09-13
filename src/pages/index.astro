@@ -3,15 +3,24 @@ import Certificados from "$_compon/Certificados.astro";
 import Heore from "$_compon/Heore";
 import Proyectos from "$_compon/Proyectos";
 import Layout from "$_lay/layout.astro";
+import { slide } from "astro:transitions";
 ---
 
 <Layout
 	title="Missa510 ~ Desarrollador"
 	description="Este es el portafolio de Missa510"
 >
-	<Heore client:load/>
-	<article class="container px-3 lg:p-0 mx-auto grid place-items-center gap-6">
-		<Proyectos client:load />
+	<Heore client:load />
+	<article
+		class="container px-3 lg:p-0 mx-auto grid place-items-center gap-6"
+	>
+		<Proyectos
+			client:load
+			transition:name="proyectos"
+			transition:animate={slide({
+				duration: "700ms"
+			})}
+		/>
 		<Certificados />
 	</article>
 </Layout>

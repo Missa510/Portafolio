@@ -27,10 +27,11 @@ export default function Proyectos() {
 
     return (
 
-        <Card id="proyectos">
-            <section className="my-1">
+        <Card props={{ id: "proyectos" }}>
+            <section className="my-1 grid place-items-center gap-2">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Proyectos</h1>
                 <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Haz hover en la imagen o click para ver la información del proyecto</h3>
+                <span className="text-xl">Puedes hacer <a href="/proyectos" className="text-cyan-400 underline hover:no-underline">click aquí</a> para ver todos los proyectos de mejor manera</span>
             </section>
 
             <section className="overflow-hidden relative">
@@ -46,14 +47,14 @@ export default function Proyectos() {
                     onClick={handlePrev}
                     className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
                 >
-                    <LeftArrow clases="h-8 w-8"/>
+                    <LeftArrow clases="h-8 w-8" />
                 </button>
 
                 <button
                     onClick={handleNext}
                     className="hidden lg:block absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-700 hover:bg-gray-900 active:bg-slate-950 text-white p-2 rounded-full"
                 >
-                    <RightArrow clases="h-8 w-8"/>
+                    <RightArrow clases="h-8 w-8" />
                 </button>
             </section>
         </Card>

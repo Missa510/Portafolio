@@ -1,5 +1,6 @@
 import { GithubLogo, LinkedinLogo, CVLogo, WhatsAppIcon, MailIcon, IGIcon } from "$_compon/ui/icons_svgs"
 import type { ProyectoProps, CertificadoProps } from "$_types/tipos"
+import { getRelativeLocaleUrl } from "astro:i18n"
 
 export const Proyectos_const: ProyectoProps[] = [
     {
@@ -73,15 +74,6 @@ export const Proyectos_const: ProyectoProps[] = [
 
 export const Certificaciones: CertificadoProps[] = [
     {
-        id: "british",
-        name: "Inglés del British Counsil",
-        nameEn: "British Counsil English",
-        description: "Certificado que me avala en el nivel de A2 en inglés expedido por el British Counsil",
-        descriptionEn: "Certificate attesting to my A2 level in English issued by the British Council",
-        path: "docs/crtf/British_certified.pdf",
-        expeDate: new Date("2022-10-22"),
-        expeInstituteS: ["British Counsil"]
-    }, {
         id: "desarrollo",
         name: "Desarrollo de la resistencia Tecnológica",
         nameEn: "Enterprise Technology Development",
@@ -137,31 +129,31 @@ export const links_contacto = [
 export const links_header = [
     {
         name: 'Sobre mí',
-        href: '#sobreMi',
+        href: getRelativeLocaleUrl("es", "/") + '#sobreMi',
     }, {
         name: 'Proyectos',
-        href: '#proyectos',
+        href: getRelativeLocaleUrl("es", "/") + '#proyectos',
     }, {
         name: 'Certificados',
-        href: '#certificados',
+        href: getRelativeLocaleUrl("es", "/") + '#certificados',
     }, {
         name: 'Contacto',
-        href: '#contact',
+        href: getRelativeLocaleUrl("es", "/") + '#contact',
     },
 ]
 
 export const links_header_en = [
     {
         name: 'About me',
-        href: '#sobreMi',
+        href: getRelativeLocaleUrl("en", "/") + '#aboutMe',
     }, {
         name: 'Projects',
-        href: '#proyectos',
+        href: getRelativeLocaleUrl("en", "/") + '#projects',
     }, {
         name: 'Certificates',
-        href: '#certificados',
+        href: getRelativeLocaleUrl("en", "/") + '#certificates',
     }, {
         name: 'Contact',
-        href: '#contact',
+        href: getRelativeLocaleUrl("en", "/") + '#contact',
     },
 ]
