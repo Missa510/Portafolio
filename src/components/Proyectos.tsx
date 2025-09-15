@@ -1,3 +1,5 @@
+"use client"
+
 import Proyecto from "$_compon/Proyecto";
 import { Proyectos_const } from "$_libs/constantes"
 import { LeftArrow, RightArrow } from "$_compon/ui/icons_svgs"
@@ -27,7 +29,10 @@ export default function Proyectos() {
 
     return (
 
-        <Card props={{ id: "proyectos" }}>
+        <Card props={{ 
+            id: "proyectos", 
+            className: "w-full px-4 py-3 grid gap-5 item-center bg-slate-700 p-4 rounded-md shadow-lg"
+            }}>
             <section className="my-1 grid place-items-center gap-2">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Proyectos</h1>
                 <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Haz hover en la imagen o click para ver la información del proyecto</h3>

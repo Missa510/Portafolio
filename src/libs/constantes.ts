@@ -59,7 +59,7 @@ export const Proyectos_const: ProyectoProps[] = [
         `, descriptionEn: `
             App that allows you to create and customize ID tags for your pets with owner information. They are not real and there are templates for various countries.
         `,
-        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB"],
+        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB", "Neovim", "Linux"],
         image: "images/projects/pets-id.png",
         demo: "https://www.petsidentification.com/",
         partners:

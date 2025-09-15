@@ -6,7 +6,7 @@ import ProyectosPage from "$_compon/ProyectosPage";
 import { ProjectsProvider } from "$_app/context/Projects";
 
 export default function ProjectsWrapper() {
-    return <ProjectsProvider>
+    return <ProjectsProvider debounceDefault={450}>
         <SearchBar />
         <ProyectosPage />
     </ProjectsProvider>

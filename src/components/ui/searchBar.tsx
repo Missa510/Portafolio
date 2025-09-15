@@ -13,25 +13,25 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
 
     const handlerInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const inputType = e.target.type
-        const valorActual = e.target.value
-        const nameInput = e.target.name
+        const inputValue = e.target.value
+        const inputName = e.target.name
 
-        console.log({ inputType, valorActual, nameInput })
+        // console.log({ inputType, inputValue, inputName })
 
         switch (inputType) {
             case "text":
-                updateProjectsParams({ title: valorActual })
+                updateProjectsParams({ title: inputValue })
                 break;
             case "date":
-                if (nameInput === "dateInit") {
-                    updateProjectsParams({ date: [new Date(valorActual), projectsParams.date[1] || undefined] })
-                } else if (nameInput == "dateFinish") {
-                    updateProjectsParams({ date: [projectsParams.date[0] || undefined, new Date(valorActual)] })
+                if (inputName === "dateInit") {
+                    updateProjectsParams({ date: [new Date(inputValue), projectsParams.date[1] || undefined] })
+                } else if (inputName == "dateFinish") {
+                    updateProjectsParams({ date: [projectsParams.date[0] || undefined, new Date(inputValue)] })
                 } else return
 
                 break;
             case "checkbox":
-                updateProjectsParams({ [nameInput]: e.target.checked })
+                updateProjectsParams({ [inputName]: e.target.checked })
                 break;
             case "select-multiple":
                 const selectedOptions = Array.from((e.target as HTMLSelectElement).selectedOptions).map(option => option.value);
@@ -52,34 +52,38 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
     return <form {...props}
         method="post"
         onSubmit={handlerSumbit}
-        className="bg-slate-600 rounded-lg px-6 py-3 mb-3 flex flex-col justify-center gap-3">
+        className="bg-slate-600 rounded-lg px-6 py-3 mb-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 items-center justify-center gap-4 [&>div>label]:text-stone-300 [&>div>h2]:text-stone-300">
 
-        <h1 className="text-2xl text-center">Buscar proyecto por...</h1>
+        <h1 className="text-2xl text-center md:col-span-2 lg:col-span-3 xl:col-span-5">Buscar proyecto por...</h1>
 
-        <div id="titleDiv" className="grid gap-2">
+        <div className="grid gap-2 ">
             <label htmlFor="title">Titulo</label>
-            <input type="text" id="title" name="title" className="block min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
+            <input type="text" id="title" name="title" className="block w-full min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
         </div>
 
-        <label htmlFor="date">Rango de Fechas</label>
-
-        <div id="date" className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3">
+            <h2 className="col-span-2">Rango de Fechas</h2>
             <label htmlFor="dateInit">Desde</label>
-            <input type="date" id="dateInit" name="dateInit" className="block min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
+            <input type="date" id="dateInit" name="dateInit" className="block w-full min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
             <label htmlFor="dateFinish">Hasta</label>
-            <input type="date" id="dateFinish" name="dateFinish" className="block min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
+            <input type="date" id="dateFinish" name="dateFinish" className="block w-full min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
         </div>
 
-        <div id="checks" className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 items-center">
             <label htmlFor="hasPreview">Vista previa</label>
-            <input type="checkbox" name="hasPreview" id="hasPreview" defaultChecked={projectsParams.hasPreview} onChange={handlerInputChange} />
+            <input type="checkbox" name="hasPreview" id="hasPreview" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPreview} onChange={handlerInputChange} />
             <label htmlFor="hasCode">Vista del código</label>
-            <input type="checkbox" name="hasCode" id="hasCode" defaultChecked={projectsParams.hasCode} onChange={handlerInputChange} />
+            <input type="checkbox" name="hasCode" id="hasCode" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasCode} onChange={handlerInputChange} />
         </div>
 
-        <div id="techs" className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 items-center">
+            <label htmlFor="hasPartners">Participación de partners</label>
+            <input type="checkbox" name="hasPartners" id="hasPartners" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPartners} onChange={handlerInputChange} />
+        </div>
+
+        <div className="grid gap-2">
             <label htmlFor="tech">Tecnologías</label>
-            <select size={5} multiple name="tech" id="tech" className="col-start-1 row-start-1 w-full appearance-none rounded-lg bg-gray-800 py-1.5 pr-7 pl-3 text-base text-gray-400 *:bg-gray-800 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" onChange={handlerInputChange}>
+            <select size={5} multiple name="tech" id="tech" className="w-full appearance-none rounded-lg bg-gray-800 py-1.5 pr-7 pl-3 text-base text-gray-400 *:bg-gray-800 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" onChange={handlerInputChange}>
                 {technologies.filter((tech, index, self) => self.indexOf(tech) === index).map((tech, index) => {
                     return (
                         <option key={index} value={tech}>{tech}</option>
@@ -88,8 +92,10 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
             </select>
         </div>
 
-        <button type="reset" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-110 active:bg-slate-800" onClick={handlerClearButton}> Limpiar filtros </button>
-        <button type="submit" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-110 active:bg-slate-800"> Ver estado </button>
+        <div className="flex lg:flex-col gap-3 justify-evenly items-center w-full">
+            <button type="reset" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full" onClick={handlerClearButton}> Limpiar filtros </button>
+            <button type="submit" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full"> Ver estado </button>
+        </div>
 
     </form>
 }

@@ -27,7 +27,7 @@ export default function Proyectos() {
 
     return (
 
-        <Card props={{ id: "projects" }}>
+        <Card props={{ id: "projects", className: "w-full px-4 py-3 grid gap-5 item-center bg-slate-700 p-4 rounded-md shadow-lg" }}>
             <section className="my-1">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Projects</h1>
                 <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Hover or cilck to see more</h3>

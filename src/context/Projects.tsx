@@ -7,6 +7,7 @@ interface ProjectParams {
     technologies: string[],
     hasPreview: boolean,
     hasCode: boolean,
+    hasPartners: boolean,
 }
 
 interface ProjectsContextParams {
@@ -21,8 +22,9 @@ const defaultParams: ProjectParams = {
     title: "",
     date: [],
     technologies: [],
-    hasPreview: true,
-    hasCode: true,
+    hasPreview: false,
+    hasCode: false,
+    hasPartners: false
 }
 
 export const ProjectsContext = createContext<ProjectsContextParams | undefined>(undefined);
@@ -70,6 +72,7 @@ export function ProjectsProvider(
         if (debounceTimeoutRef.current) {
             clearTimeout(debounceTimeoutRef.current);
         }
+        
         setIsDebouncing(false);
         setProjectsParams(defaultParams);
     };
