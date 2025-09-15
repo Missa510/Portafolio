@@ -4,7 +4,7 @@ import { useContext } from "react";
 export function useProject() {
     // contexto
     const context = useContext(ProjectsContext);
-    if (!context) {
+    if (!context || typeof context === undefined) {
         throw new Error('useProject debe usarse dentro de un ProjectsProvider');
     }
 
@@ -22,5 +22,5 @@ export function useProject() {
         setDebouncedDelay,
         isDebouncing,
         clearParams
-    }
+    };
 }

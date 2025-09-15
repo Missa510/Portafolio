@@ -138,7 +138,7 @@ export const links_header = [
         href: getRelativeLocaleUrl("es", "/") + '#certificados',
     }, {
         name: 'Contacto',
-        href: getRelativeLocaleUrl("es", "/") + '#contact',
+        href: '#contact',
     },
 ]
 
@@ -154,6 +154,6 @@ export const links_header_en = [
         href: getRelativeLocaleUrl("en", "/") + '#certificates',
     }, {
         name: 'Contact',
-        href: getRelativeLocaleUrl("en", "/") + '#contact',
+        href: '#contact',
     },
 ]

@@ -17,14 +17,6 @@ interface ProjectParams {
     hasPreview: boolean,
     hasCode: boolean,
 }
-
-interface ProjectsContextParams {
-    projectsParams: Partial<ProjectParams>,
-    updateProjectsParams: (params: Partial<ProjectParams>) => void,
-    setDebouncedDelay: (ms: number | string) => void,
-    isDebouncing: boolean,
-    clearParams: () => void
-}
 ```
 
 Se rquiere al menos un parámetro para buscar entre los diferentes proyectos

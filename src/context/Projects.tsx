@@ -17,18 +17,24 @@ interface ProjectsContextParams {
     clearParams: () => void
 }
 
+const defaultParams: ProjectParams = {
+    title: "",
+    date: [],
+    technologies: [],
+    hasPreview: true,
+    hasCode: true,
+}
+
 export const ProjectsContext = createContext<ProjectsContextParams | undefined>(undefined);
 
 export function ProjectsProvider(
-    { children, debounceDefault = 250 }:
-        { children: ReactNode, debounceDefault?: number | string }
+    { children, debounceDefault = 250 }: { children: ReactNode, debounceDefault?: number | string }
 ) {
-    const [projectsParams, setProjectsParams] = useState<Partial<ProjectParams>>({});
+    // Estados iniciales
+    const [projectsParams, setProjectsParams] = useState<Partial<ProjectParams>>(defaultParams);
     const [isDebouncing, setIsDebouncing] = useState(false);
     const debounceRefDelay = useRef<number>(
-        isNaN(Number(debounceDefault)) ? 
-        250 : 
-        Number(debounceDefault)
+        isNaN(Number(debounceDefault)) ? 250 : Number(debounceDefault)
     );
     const debounceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -57,10 +63,15 @@ export function ProjectsProvider(
 
             setIsDebouncing(false);
         }, debounceRefDelay.current);
+
     }, []);
 
     const clearParams = () => {
-        setProjectsParams({});
+        if (debounceTimeoutRef.current) {
+            clearTimeout(debounceTimeoutRef.current);
+        }
+        setIsDebouncing(false);
+        setProjectsParams(defaultParams);
     };
 
     //Limipar el timeout al desmontar el provider
