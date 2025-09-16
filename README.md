@@ -16,6 +16,7 @@ interface ProjectParams {
     technologies: string[],
     hasPreview: boolean,
     hasCode: boolean,
+    hasPartner: boolean,
 }
 ```
 

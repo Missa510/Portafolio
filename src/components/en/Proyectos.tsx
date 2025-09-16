@@ -3,6 +3,7 @@ import { Proyectos_const } from "$_libs/constantes"
 import { LeftArrow, RightArrow } from "$_compon/ui/icons_svgs"
 import { useState, useEffect, useRef } from "react"
 import { Card } from "$_compon/ui/card";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
 export default function Proyectos() {
 
@@ -27,10 +28,14 @@ export default function Proyectos() {
 
     return (
 
-        <Card props={{ id: "projects", className: "w-full px-4 py-3 grid gap-5 item-center bg-slate-700 p-4 rounded-md shadow-lg" }}>
-            <section className="my-1">
+        <Card props={{
+            id: "projects",
+            className: "w-full px-4 py-3 grid gap-5 items-center bg-slate-700 p-4 rounded-md shadow-lg"
+        }}>
+            <section className="my-1 grid place-items-center gap-2">
                 <h1 className="text-2xl xs:text-4xl md:text-7xl text-center uppercase text-white">Projects</h1>
-                <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Hover or cilck to see more</h3>
+                <h3 className="text-center mt-2 text-md md:text-2xl italic text-cyan-400">Make hover on image or cilck to see more info about the project</h3>
+                <span className="text-xl">You can <a href={getRelativeLocaleUrl("en", "/projects")} className="text-cyan-400 underline hover:no-underline">click here</a> to see all projects better</span>
             </section>
 
             <section className="overflow-hidden relative">
