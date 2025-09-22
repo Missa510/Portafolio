@@ -109,9 +109,9 @@ export const links_contacto = [
         icon: CVLogo
     }, {
         name: "WhatsApp",
-        link: "https://wa.me/+573028393442?text=Hola%20buenas%2C%20quiero%20contratarte%20para%20un%20trabajo%20como%20desarrollador",
-        linkEn: "https://wa.me/+573028393442?text=Hi%20Missa%2C%20I%20wanna%20hire%20you%20as%20a%20developer%20on%20my%20company",
-        opc: "+573028393442",
+        opc: "+573229392243",
+        link: `https://wa.me/573229392243?text=Hola%20buenas%2C%20quiero%20contratarte%20para%20un%20trabajo%20como%20desarrollador`,
+        linkEn: "https://wa.me/+573229392243?text=Hi%20Missa%2C%20I%20wanna%20hire%20you%20as%20a%20developer%20on%20my%20company",
         icon: WhatsAppIcon
     }, {
         name: "Email",
