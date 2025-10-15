@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "$_compon/en/Header";
 import Footer from "$_compon/en/Footer";
 import { ClientRouter } from "astro:transitions";
+import { getRelativeLocaleUrl } from "astro:i18n";
 ---
 
 <!doctype html>
@@ -14,6 +15,13 @@ import { ClientRouter } from "astro:transitions";
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        <meta name="og:title" content={"Missa510's Portfolio"} />
+        <meta name="og:description" content={"This is the Santiago Quintero V. portfolio. Best known as Missa510"} />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content={Astro.url} />
+        <meta name="og:image" content={"/images/op_image.png"}/>
+
         <ClientRouter />
         <title>{title}</title>
     </head>

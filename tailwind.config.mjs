@@ -5,7 +5,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				"main-frutiger": "url('../images/frutiger_0.jpg')",
-				"icon-cipher": "url('../images/bill_cipher_human_sara.jpg')",
+				"icon-cipher": "url('../images/MeDaMiedito.png')",
 			},
 			colors: {
 				"primary": "var(--primario)",

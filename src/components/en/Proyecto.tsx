@@ -2,6 +2,55 @@ import { CodeIcon, DemoIcon } from "$_compon/ui/icons_svgs";
 import type { ProyectoProps } from "$_types/tipos";
 import Brant from "$_compon/ui/brant";
 
+const ProyectoItem: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, technologies, git, demo, partners }) => {
+
+    return (
+
+        <section className="flex flex-col lg:flex-row items-center p-3 lg:p-0 rounded-lg bg-slate-800 gap-3 shadow-md overflow-hidden max-w-full">
+            <img src={`../../${image}`} alt={`Project image: ${title}`} className="rounded-lg lg:rounded-none lg:aspect-square w-[400px] object-cover" />
+            <div className="grid gap-2 place-items-center mr-2">
+                <h1 className="text-2xl lg:text-4xl">{title}</h1>
+                <span className="text-cyan-400">Created at: {date.toDateString()}</span>
+                <p className="text-xl text-center text-slate-300 text-balance">{descriptionEn}</p>
+                <h2 className="text-xl italic">Technologies used</h2>
+                <div className="flex justify-center flex-wrap gap-4">
+                    {
+                        technologies.map((tech, index) => {
+                            return (
+                                <Brant key={index} tech={tech} />
+                            )
+                        })
+                    }
+                </div>
+                <div className="grid place-items-center gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
+
+                    {demo && <a className="inline-flex items-center w-full gap-4 bg-stone-600 text-white px-4 py-2 rounded md:text-xl hover:bg-stone-900 focus:bg-stone-900 transition-all duration-200 ease-in-out" href={demo} target="_blank" rel="noopener noreferrer nofollow" aria-disabled>
+                        <DemoIcon clases="text-white h-5 nd:h-6 w-auto" />
+                        Watch project
+                    </a>}
+                    {git && <a className="inline-flex items-center w-full gap-4 bg-slate-600 text-white px-4 py-2 rounded md:text-xl hover:bg-slate-900 focus:bg-slate-900 transition-all duration-200 ease-in-out" href={git} target="_blank" rel="noopener noreferrer nofollow">
+                        <CodeIcon clases="text-white h-4 md:h-8 w-auto" />
+                        View source code
+                    </a>}
+
+                </div>
+                {partners && <div className="grid place-items-center gap-2">
+                    <h2 className="text-center font-[600] text-2xl md:text-3xl 2xl:text-4xl">Partners</h2>
+                    <div className="flex justify-center flex-wrap gap-1">
+                        <span>I made this projecto with help of: </span>
+                        <div>
+                            {partners.map((partner, index) => (
+                                <a key={index} className="hover:underline hover:text-cyan-300" href={partner.link} target="_blank" rel="noopener noreferrer nofollow">{partner.name}</a>
+                            ))}
+                        </div>
+                    </div>
+                </div>}
+            </div>
+        </section>
+
+    );
+};
+
 const Proyecto: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, technologies, git, demo, partners }) => {
 
     return (
@@ -33,7 +82,7 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, 
                             }
                         </div>
                     </div>
-                    <div className="grid place-items-center gap-4" style={{gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))"}}>
+                    <div className="grid place-items-center gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
 
                         {demo && <a className="inline-flex items-center w-full gap-4 bg-stone-600 text-white px-4 py-2 rounded md:text-xl hover:bg-stone-900 focus:bg-stone-900 transition-all duration-200 ease-in-out" href={demo} target="_blank" rel="noopener noreferrer" aria-disabled>
                             <DemoIcon clases="text-white h-5 nd:h-6 w-auto" />
@@ -64,4 +113,4 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, 
     );
 };
 
-export default Proyecto;
+export { Proyecto, ProyectoItem };

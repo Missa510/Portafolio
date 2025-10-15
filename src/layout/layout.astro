@@ -13,6 +13,13 @@ import { ClientRouter } from "astro:transitions";
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
+
+        <meta name="og:title" content={"Portafolio de Missa510"} />
+        <meta name="og:description" content={"Portafolio de Santiago Quintero V. Mejor conocido como Missa510"} />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content={Astro.url} />
+        <meta name="og:image" content={Astro.url + "images/op_image.png"}/>
+
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <ClientRouter />
         <title>{title}</title>

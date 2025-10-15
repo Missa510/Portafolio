@@ -39,7 +39,7 @@ export const Proyectos_const: ProyectoProps[] = [
         `, descriptionEn: `
             The most modern official website for the Táchira choir boys, with improved performance and covering all the needs of students and teachers. In addition to the use of simple cybersecurity techniques to protect official material.
         `,
-        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB"],
+        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB", "TypeScript"],
         image: "images/projects/carajitos.png",
         git: "https://github.com/daws-4/ninoscantoreslanding",
         demo: "https://ninoscantorestachira.vercel.app/",
@@ -59,7 +59,7 @@ export const Proyectos_const: ProyectoProps[] = [
         `, descriptionEn: `
             App that allows you to create and customize ID tags for your pets with owner information. They are not real and there are templates for various countries.
         `,
-        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB", "Neovim", "Linux"],
+        technologies: ["NextJS", "React", "Tailwind", "Vercel", "HeroUI", "MongoDB", "Neovim", "Linux", "TypeScript"],
         image: "images/projects/pets-id.png",
         demo: "https://www.petsidentification.com/",
         partners:

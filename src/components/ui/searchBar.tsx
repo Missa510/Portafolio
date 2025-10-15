@@ -74,9 +74,6 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
             <input type="checkbox" name="hasPreview" id="hasPreview" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPreview} onChange={handlerInputChange} />
             <label htmlFor="hasCode">Vista del código</label>
             <input type="checkbox" name="hasCode" id="hasCode" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasCode} onChange={handlerInputChange} />
-        </div>
-
-        <div className="grid grid-cols-2 gap-3 items-center">
             <label htmlFor="hasPartners">Participación de partners</label>
             <input type="checkbox" name="hasPartners" id="hasPartners" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPartners} onChange={handlerInputChange} />
         </div>
@@ -94,7 +91,6 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
 
         <div className="flex lg:flex-col gap-3 justify-evenly items-center w-full">
             <button type="reset" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full" onClick={handlerClearButton}> Limpiar filtros </button>
-            <button type="submit" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full"> Ver estado </button>
         </div>
 
     </form>

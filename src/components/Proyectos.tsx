@@ -1,6 +1,6 @@
 "use client"
 
-import Proyecto from "$_compon/Proyecto";
+import { Proyecto } from "$_compon/Proyecto";
 import { Proyectos_const } from "$_libs/constantes"
 import { LeftArrow, RightArrow } from "$_compon/ui/icons_svgs"
 import { useState, useEffect, useRef } from "react"

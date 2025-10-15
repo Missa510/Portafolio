@@ -62,7 +62,7 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-            <h2 className="col-span-2">Date raneg</h2>
+            <h2 className="col-span-2">Date range</h2>
             <label htmlFor="dateInit">From</label>
             <input type="date" id="dateInit" name="dateInit" className="block w-full min-w-0 grow bg-gray-800 py-1.5 px-3 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6 rounded-lg" onChange={handlerInputChange} />
             <label htmlFor="dateFinish">To</label>
@@ -74,9 +74,7 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
             <input type="checkbox" name="hasPreview" id="hasPreview" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPreview} onChange={handlerInputChange} />
             <label htmlFor="hasCode">Source code</label>
             <input type="checkbox" name="hasCode" id="hasCode" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasCode} onChange={handlerInputChange} />
-        </div>
 
-        <div className="grid grid-cols-2 gap-3 items-center">
             <label htmlFor="hasPartners">Partnership</label>
             <input type="checkbox" name="hasPartners" id="hasPartners" className="appearance-none w-6 h-6 bg-gray-800 rounded-md checked:bg-indigo-500 checked:border-transparent focus:outline-none" defaultChecked={projectsParams.hasPartners} onChange={handlerInputChange} />
         </div>
@@ -94,7 +92,6 @@ export default function SearchBar({ props }: { props?: HTMLProps<HTMLFormElement
 
         <div className="flex lg:flex-col gap-3 justify-evenly items-center w-full">
             <button type="reset" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full" onClick={handlerClearButton}> Clear filters </button>
-            <button type="submit" className="bg-slate-400 rounded-lg px-4 py-2 transition hover:bg-slate-700 hover:scale-105 active:bg-slate-800 w-full"> Watch state (dev only)</button>
         </div>
 
     </form>
