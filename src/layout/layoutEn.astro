@@ -4,7 +4,8 @@ import "../globals.css";
 import Header from "$_compon/en/Header";
 import Footer from "$_compon/en/Footer";
 import { ClientRouter } from "astro:transitions";
-import { getRelativeLocaleUrl } from "astro:i18n";
+const urlImage = new URL("/images/op_image.png", Astro.url);
+const urlOPTag = new URL(Astro.url, Astro.site)
 ---
 
 <!doctype html>
@@ -16,11 +17,18 @@ import { getRelativeLocaleUrl } from "astro:i18n";
         <meta name="description" content={description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-        <meta name="og:title" content={"Missa510's Portfolio"} />
-        <meta name="og:description" content={"This is the Santiago Quintero V. portfolio. Best known as Missa510"} />
-        <meta name="og:type" content="website" />
-        <meta name="og:url" content={Astro.url} />
-        <meta name="og:image" content={"/images/op_image.png"}/>
+        <!-- OPGraph para los sitios -->
+        <meta property="og:locale" content={"en_US"} />
+        <meta property="og:title" content={"Missa510's web portfolio"} />
+        <meta property="og:site_name" content={"Missa510 ~ Developer"} />
+        <meta property="og:description" content={"This is the Santiago Quintero V.'s web portfolio, better knonwn as Missa510"} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={urlOPTag} />
+        <meta property="og:image" content={urlImage}/>
+        <meta property="og:image:width" content={'1061'}/>
+        <meta property="og:image:height" content={'425'}/>
+        <meta property="og:image:alt" content={"Image alt from Missa510 and his web portfolio"}/>
+        <meta property="og:image:type" content={"image/png"}/>
 
         <ClientRouter />
         <title>{title}</title>
