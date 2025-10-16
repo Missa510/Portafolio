@@ -4,8 +4,6 @@ import "../globals.css";
 import Header from "$_compon/Header";
 import Footer from "$_compon/Footer";
 import { ClientRouter } from "astro:transitions";
-const urlImage = new URL("/images/op_image.png", Astro.url);
-const urlOPTag = new URL(Astro.url, Astro.site)
 ---
 
 <!doctype html>
@@ -22,8 +20,8 @@ const urlOPTag = new URL(Astro.url, Astro.site)
         <meta property="og:site_name" content={"Missa510 ~ Desarrollador"} />
         <meta property="og:description" content={"Portafolio de Santiago Quintero V. Mejor conocido como Missa510"} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={urlOPTag} />
-        <meta property="og:image" content={urlImage}/>
+        <meta property="og:url" content={"https://portafolio-tau-snowy.vercel.app/"} />
+        <meta property="og:image" content={"https://portafolio-tau-snowy.vercel.app/images/op_image.png"}/>
         <meta property="og:image:width" content={'1061'}/>
         <meta property="og:image:height" content={'425'}/>
         <meta property="og:image:alt" content={"Imagen de refencia de Missa510 y el portafolio web"}/>
