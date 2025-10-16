@@ -14,11 +14,16 @@ import { ClientRouter } from "astro:transitions";
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content={description} />
 
+        <!-- OPGraph para los sitios -->
+        <meta name="og:locale" content={"es_ES"} />
         <meta name="og:title" content={"Portafolio de Missa510"} />
+        <meta name="og:site_name" content={"Missa510 ~ Desarrollador"} />
         <meta name="og:description" content={"Portafolio de Santiago Quintero V. Mejor conocido como Missa510"} />
         <meta name="og:type" content="website" />
-        <meta name="og:url" content={Astro.url} />
-        <meta name="og:image" content={Astro.url + "images/op_image.png"}/>
+        <meta name="og:url" content={Astro.url.toString()} />
+        <meta name="og:image" content={"/images/op_image.png"}/>
+        <meta name="og:image:alt" content={"Imagen de refencia de Missa510 y el portafolio web"}/>
+        <meta name="og:image:type" content={"image/png"}/>
 
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <ClientRouter />
