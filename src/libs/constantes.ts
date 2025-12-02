@@ -84,11 +84,11 @@ export const Certificaciones: CertificadoProps[] = [
         expeInstituteS: ["UCC", "Microsoft"]
     }, {
         id: "typescript",
-        name: "Declaración de clases de TypeScript",
+        name: "Declaración de clases y objetos de TypeScript",
         nameEn: "TypeScript and ObjectOriented Programming",
         description: "Certificado que me avala como un desarrollador junior de TypeScript expedido por Microsoft en la plataforma de Microsoft Learn",
         descriptionEn: "Certificate endorsing me as a junior TypeScript developer issued by Microsoft on the Microsoft Learn platform",
-        path: "docs/crtf/TP_clases.pdf",
+        path: "docs/crtf/TP_class.pdf",
         expeDate: new Date("2025-02-05"),
         expeInstituteS: ["Microsoft"]
     },

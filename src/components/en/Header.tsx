@@ -40,7 +40,7 @@ export default function Header() {
                         menuCover.classList.toggle("invisible")
                         menuCover.classList.toggle("visible")
                     }}>
-                        {opened ? (<MenuCloseIcon clases="animate-open-menu text-white w-auto h-8 2xl:h-14" />) : (<MenuOpenIcon clases="animate-open-menu text-white w-auto h-8 2xl:h-14" />)}
+                        {opened ? (<MenuCloseIcon className="animate-open-menu text-white w-auto h-8 2xl:h-14" />) : (<MenuOpenIcon className="animate-open-menu text-white w-auto h-8 2xl:h-14" />)}
                     </button>
                 </nav>
                 <section id="menu" className="h-0 transition-all duration-300">

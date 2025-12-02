@@ -1,8 +1,9 @@
 ---
+import Layout from "$_lay/layout.astro";
 import Certificados from "$_compon/Certificados.astro";
 import Heore from "$_compon/Heore";
 import Proyectos from "$_compon/Proyectos";
-import Layout from "$_lay/layout.astro";
+import Stacks from "$_compon/Stacks";
 import { slide } from "astro:transitions";
 ---
 
@@ -21,6 +22,7 @@ import { slide } from "astro:transitions";
 				duration: "700ms",
 			})}
 		/>
+		<Stacks />
 		<Certificados />
 	</article>
 </Layout>

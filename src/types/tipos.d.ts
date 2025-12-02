@@ -1,3 +1,5 @@
+import type { SVGProps } from "react";
+
 export interface ProyectoProps {
     id: string,
     title: string,
@@ -27,6 +29,4 @@ export interface CertificadoProps {
     expeInstituteS: string[]
 }
 
-export interface SVGProps extends SVGProps {
-    clases: string
-}
+export interface SVGProps extends SVGProps<SVGSVGElement>{}

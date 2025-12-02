@@ -6,7 +6,7 @@ const { name, description, path, expeDate, expeInstituteS } = Astro.props;
     <h1 class="text-2xl text-center">Certificado de {name}</h1>
     <p class="text-balance text-xl max-w-[60ch] text-center text-slate-400">{description}</p>
     <a href={path} target="_blank" class="group inline-flex items-center gap-2 rounded-md hover:bg-slate-200 px-4 py-2 transition hover:text-black"> 
-        <PDFIcon clases="h-8 w-8 transition text-blue-300 group-hover:text-blue-700"/> Ver certificado
+        <PDFIcon className="h-8 w-8 transition text-blue-300 group-hover:text-blue-700"/> Ver certificado
     </a>
     <span class="text-stone-400">Expedido en: <strong>{expeDate.toDateString()}</strong> por: <strong>{expeInstituteS.join(', ')}</strong></span>
 </section>

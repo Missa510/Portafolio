@@ -25,11 +25,11 @@ const ProyectoItem: React.FC<ProyectoProps> = ({ title, descriptionEn, date, ima
                 <div className="grid place-items-center gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
 
                     {demo && <a className="inline-flex items-center w-full gap-4 bg-stone-600 text-white px-4 py-2 rounded md:text-xl hover:bg-stone-900 focus:bg-stone-900 transition-all duration-200 ease-in-out" href={demo} target="_blank" rel="noopener noreferrer nofollow" aria-disabled>
-                        <DemoIcon clases="text-white h-5 nd:h-6 w-auto" />
+                        <DemoIcon classNameameameameameame="text-white h-5 nd:h-6 w-auto" />
                         Watch project
                     </a>}
                     {git && <a className="inline-flex items-center w-full gap-4 bg-slate-600 text-white px-4 py-2 rounded md:text-xl hover:bg-slate-900 focus:bg-slate-900 transition-all duration-200 ease-in-out" href={git} target="_blank" rel="noopener noreferrer nofollow">
-                        <CodeIcon clases="text-white h-4 md:h-8 w-auto" />
+                        <CodeIcon classNameameameameameameameameameameame="text-white h-4 md:h-8 w-auto" />
                         View source code
                     </a>}
 
@@ -85,11 +85,11 @@ const Proyecto: React.FC<ProyectoProps> = ({ title, descriptionEn, date, image, 
                     <div className="grid place-items-center gap-4" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" }}>
 
                         {demo && <a className="inline-flex items-center w-full gap-4 bg-stone-600 text-white px-4 py-2 rounded md:text-xl hover:bg-stone-900 focus:bg-stone-900 transition-all duration-200 ease-in-out" href={demo} target="_blank" rel="noopener noreferrer" aria-disabled>
-                            <DemoIcon clases="text-white h-5 nd:h-6 w-auto" />
+                            <DemoIcon className="text-white h-5 nd:h-6 w-auto" />
                             Watch project in action
                         </a>}
                         {git && <a className="inline-flex items-center w-full gap-4 bg-slate-600 text-white px-4 py-2 rounded md:text-xl hover:bg-slate-900 focus:bg-slate-900 transition-all duration-200 ease-in-out" href={git} target="_blank" rel="noopener noreferrer">
-                            <CodeIcon clases="text-white h-4 md:h-8 w-auto" />
+                            <CodeIcon className="text-white h-4 md:h-8 w-auto" />
                             Watch project on GitHub
                         </a>}
 

@@ -12,7 +12,7 @@ export default function Footer() {
                             const { name, link, opc, icon } = contacto
                             return (
                                 <div key={name} className="flex gap-5 items-center">
-                                    {icon({ clases: "h-8 w-auto" })}
+                                    {icon({ className: "h-8 w-auto" })}
                                     <div className="grid justify-start">
                                         <span className="text-lg md:text-2xl">{name}</span>
                                         <a href={link} target="_blank" rel="noopener noreferrer" className="text-md md:text-lg text-slate-400 hover:underline">{opc}</a>

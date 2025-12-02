@@ -36,7 +36,7 @@ export default function Heore() {
                             const { name, link, icon } = enlace
                             return (
                                 <a key={index} href={!link ? "/docs/cv/CV_en.pdf" : link} target="_blank" rel="noreferrer noopener nofollow external" className="flex items-center gap-2 bg-primary text-lg text-white px-3 py-2 rounded-md 2xl:px-6 2xl:py-4 2xl:text-[2rem] 2xl:gap-4 hover:hue-rotate-30 focus:hue-rotate-30 hover:scale-110 focus:scale-110 active:hue-rotate-30 transition-all duration-200 ease-in-out">
-                                    {icon({ clases: "text-white w-auto h-10 2xl:h-14" })}
+                                    {icon({ className: "text-white w-auto h-10 2xl:h-14" })}
                                     {name}
                                 </a>
                             )

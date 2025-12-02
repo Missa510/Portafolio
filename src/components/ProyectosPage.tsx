@@ -12,7 +12,7 @@ export default function ProyectosPage() {
     const proyects_id = useId()
     const [Proyectos, setProyectos] = useState(Proyectos_const)
     const [empty, setEmpty] = useState(false)
-    const { projectsParams, isDebouncing, setDebouncedDelay = 1500 } = useProject()
+    const { projectsParams, isDebouncing} = useProject()
 
     const buscarProyectos = () => {
         const { title, date, technologies, hasPreview, hasCode, hasPartners } = projectsParams;
