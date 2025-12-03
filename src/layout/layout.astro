@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "$_compon/Header";
 import Footer from "$_compon/Footer";
 import { ClientRouter } from "astro:transitions";
+import { Toaster } from "sonner";
 ---
 
 <!doctype html>
@@ -36,6 +37,7 @@ import { ClientRouter } from "astro:transitions";
     >
         <Header client:load />
         <slot />
-        <Footer />
+        <Footer client:load/>
+        <Toaster richColors client:load />
     </body>
 </html>

@@ -1,16 +1,21 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-    // Enable React to support React JSX components.
-    integrations: [react(), tailwind({
-        applyBaseStyles: false,
-    })],
+  // Enable React to support React JSX components.
+  integrations: [react(), tailwind({
+      applyBaseStyles: false,
+  })],
 
-    i18n: {
-        defaultLocale: "es",
-        locales: ["es", "en"],
-    }
+  i18n: {
+      defaultLocale: "es",
+      locales: ["es", "en"],
+  },
+  output: "server",
+  adapter: node({
+    mode: "standalone"
+  })
 });

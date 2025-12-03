@@ -69,8 +69,8 @@ function Stack() {
         }
     ]
 
-    return <section className=" grid gap-5 grid-cols-2 ">
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col md:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+    return <section className=" grid gap-5 grid-cols-2" id="stacks">
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
             {
                 frontEndSatck.map((stack, index) => {
                     return (
@@ -82,7 +82,7 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col md:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
         {
                 backEndSatck.map((stack, index) => {
                     return (
@@ -94,7 +94,7 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col md:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
         {
                 dataBaseStack.map((stack, index) => {
                     return (
@@ -106,7 +106,7 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col md:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
             {
                 controlEngineSoftware.map((stack, index) => {
                     return (

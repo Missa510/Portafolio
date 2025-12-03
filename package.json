@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/node": "^9.5.1",
     "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.2",
     "@types/react": "^18.3.10",
@@ -19,6 +20,8 @@
     "astro": "^5.5.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "resend": "^6.5.2",
+    "sonner": "^2.0.7",
     "tailwindcss": "3.4.14",
     "typescript": "^5.6.2"
   }

@@ -28,5 +28,3 @@ export interface CertificadoProps {
     expeDate: Date,
     expeInstituteS: string[]
 }
-
-export interface SVGProps extends SVGProps<SVGSVGElement>{}

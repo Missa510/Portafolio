@@ -91,6 +91,15 @@ export const Certificaciones: CertificadoProps[] = [
         path: "docs/crtf/TP_class.pdf",
         expeDate: new Date("2025-02-05"),
         expeInstituteS: ["Microsoft"]
+    },{
+        id: "ai-imb",
+        name: "Inteligencia Artificial | IBM Watson",
+        nameEn: "Artificial Intelligence | IBM Watson",
+        description: "Certificado que me avala como portador del uso responsable de las mejores prácticas y usos responsables para la inteligencia artificial en desarrollo de proyectos web y/o aplicaciones, expedido por IBM",
+        descriptionEn: "Certificate endorsing me as a responsible user of the best practices and responsible uses of artificial intelligence in web development and/or applications, issued by IBM",
+        path: "docs/crtf/TP_class.pdf",
+        expeDate: new Date("2025-09-28"),
+        expeInstituteS: ["IBM", "IBM Watson"]
     },
 ]
 
@@ -137,6 +146,9 @@ export const links_header = [
         name: 'Certificados',
         href: getRelativeLocaleUrl("es", "/") + '#certificados',
     }, {
+        name: 'Stacks',
+        href: '#stacks',
+    },{
         name: 'Contacto',
         href: '#contact',
     },
@@ -153,6 +165,9 @@ export const links_header_en = [
         name: 'Certificates',
         href: getRelativeLocaleUrl("en", "/") + '#certificates',
     }, {
+        name: 'Stacks',
+        href: '#stacks',
+    },{
         name: 'Contact',
         href: '#contact',
     },

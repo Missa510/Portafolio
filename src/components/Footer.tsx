@@ -1,12 +1,16 @@
+"use server"
 import { links_contacto } from "$_libs/constantes"
 import { links_header } from "$_libs/constantes"
+import EmailSneder from "$_compon/ui/emailSender"
 
 export default function Footer() {
     return (
         <footer className="w-full bg-slate-800 mt-6 px-6 py-3" id="contact">
+            <section className="flex items-center justify-center md:justify-start-left">
+                <h1 className="uppercase font-bold text-lg md:text-2xl text-slate-200">Contactos personales</h1>
+            </section>
             <section className="grid place-items-center md:grid-cols-2 gap-y-3 md:gap-x-6">
                 <section className="grid gap-3">
-                    <h1 className="uppercase text-center md:text-left font-bold text-lg md:text-2xl text-slate-200">Contactos personales</h1>
                     {
                         links_contacto.slice(3).map((contacto) => {
                             const { name, link, opc, icon } = contacto
@@ -33,6 +37,7 @@ export default function Footer() {
             </section>
             <hr className="my-3" />
             <h1 className="text-center text-lg md:text-2xl text-slate-300">Sitio hecho por mí mismo ❤️ | Abril 2025</h1>
+            <EmailSneder />
         </footer>
     )
 }
