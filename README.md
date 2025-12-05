@@ -23,4 +23,4 @@ interface ProjectParams {
 Se rquiere al menos un parámetro para buscar entre los diferentes proyectos
 (Ahora en beta)
 
-> ¿Por qué no use mejor Vite en lugar de Astro? XDXDXDXDXDXDXD
+> ¿Por qué no usé mejor Vite en lugar de Astro? XDXDXDXDXDXDXD

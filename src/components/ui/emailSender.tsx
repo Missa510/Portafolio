@@ -1,4 +1,3 @@
-"use server"
 import { actions } from "astro:actions";
 import { toast } from "sonner";
 
@@ -9,22 +8,22 @@ export default function EmailSender() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const {data, error} = await actions.send(formData);
+    const { data, error } = await actions.send(formData);
 
-    if(error){
-      toast(error.message);
+    if (error) {
+      toast.error(error.message);
       console.error(error.message);
       return;
     }
 
-    toast("Email enviado correctamente! Pronto recibira una respuesta.");
+    toast.success("Email enviado correctamente! Pronto recibira una respuesta.");
     console.log(data);
 
     form.reset();
   };
 
   return (
-    <form id="form" action={actions.send} className="flex flex-col gap-2 rounded-lg" method="POST" onSubmit={handleSubmit}>
+    <form id="form" className="flex flex-col gap-2 rounded-lg" method="POST" onSubmit={handleSubmit}>
       <label htmlFor="name">Nombre</label>
       <input
         className="text-black p-2 rounded-lg"
