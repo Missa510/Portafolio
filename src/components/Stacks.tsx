@@ -50,7 +50,7 @@ function Stack() {
         }, {
             name: "PostgreSQL",
             icon: Icons.PostgreSQL
-        },{
+        }, {
             name: "MongoDB",
             icon: Icons.MongoDB
         }
@@ -60,17 +60,17 @@ function Stack() {
         {
             name: "Git",
             icon: Icons.Git
-        },{
+        }, {
             name: "Docker",
             icon: Icons.Docker
-        },{
+        }, {
             name: "n8n",
             icon: Icons.n8n
         }
     ]
 
-    return <section className=" grid gap-5 grid-cols-2" id="stacks">
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+    return <section className="grid gap-5 lg:grid-cols-2" id="stacks">
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 grid place-items-center grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-md shadow-lg" }}>
             {
                 frontEndSatck.map((stack, index) => {
                     return (
@@ -82,8 +82,8 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
-        {
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 grid place-items-center grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-md shadow-lg" }}>
+            {
                 backEndSatck.map((stack, index) => {
                     return (
                         <div key={index} className="flex flex-col items-center justify-center gap-2">
@@ -94,8 +94,8 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
-        {
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-violet-950 border-slate-900 border-2 grid place-items-center grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-md shadow-lg" }}>
+            {
                 dataBaseStack.map((stack, index) => {
                     return (
                         <div key={index} className="flex flex-col items-center justify-center gap-2">
@@ -106,7 +106,7 @@ function Stack() {
                 })
             }
         </Card>
-        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex flex-col lg:flex-row flex-1 basis-2 items-center justify-around p-4 rounded-md shadow-lg" }}>
+        <Card props={{ className: "bg-gradient-to-br from-slate-950 to-[#201020] border-slate-900 border-2 flex grid place-items-center grid-cols-2 lg:grid-cols-4 gap-4 p-4 rounded-md shadow-lg" }}>
             {
                 controlEngineSoftware.map((stack, index) => {
                     return (

@@ -1,12 +1,12 @@
 ---
 import { PDFIcon } from "$_compon/ui/icons_svgs"
-const { nameEn, descriptionEn, path, expeDate, expeInstituteS } = Astro.props;
+const { nameEn, descriptionEn, expeDate, expeInstituteS } = Astro.props;
 ---
 <section class="grid place-items-center gap-3 bg-slate-800 p-4 rounded-lg">
     <h1 class="text-2xl text-center">Certificado de {nameEn}</h1>
     <p class="text-balance text-xl max-w-[60ch] text-center text-slate-400">{descriptionEn}</p>
-    <a href={`../${path}`} target="_blank" class="group inline-flex items-center gap-2 rounded-md hover:bg-slate-200 px-4 py-2 transition hover:text-black"> 
-        <PDFIcon className="h-8 w-8 transition text-blue-300 group-hover:text-blue-700"/> View certified
+    <a href={`javascript:void(0)`} class="group inline-flex items-center gap-2 rounded-md hover:bg-slate-200 px-4 py-2 transition hover:text-black"> 
+        <PDFIcon className="h-8 w-8 transition text-blue-300 group-hover:text-blue-700"/> View certified (disabled)
     </a>
     <span class="text-stone-400">Issued in: <strong>{expeDate.toDateString()}</strong> by: <strong>{expeInstituteS.join(', ')}</strong></span>
 </section>
